@@ -165,18 +165,6 @@ $app->get('/pushmessage', function ($req, $response) use ($bot) {
         ->withStatus($result->getHTTPStatus());
 });
 
-$app->get('/pushmessage', function ($req, $response) use ($bot) {
-    // send push message to user
-    $userId = 'U2bdebd92288b04e7b4edbcdf5936cf50';
-    $stickerMessageBuilder = new StickerMessageBuilder(1, 106);
-	$bot->pushMessage($userId, $stickerMessageBuilder);
- 
-    $response->getBody()->write("Pesan push berhasil dikirim!");
-    return $response
-        ->withHeader('Content-Type', 'application/json')
-        ->withStatus($result->getHTTPStatus());
-});
-
 
 $app->get('/multicast', function ($req, $response) use ($bot) {
     // list of users
