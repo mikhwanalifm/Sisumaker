@@ -169,7 +169,7 @@ $app->get('/pushmessage', function ($req, $response) use ($bot) {
 $app->get('/multicast', function ($req, $response) use ($bot) {
     // list of users
     $userList = [
-        'Isi dengan user ID Anda',
+        'U2bdebd92288b04e7b4edbcdf5936cf50',
         'Isi dengan user ID teman1',
         'Isi dengan user ID teman2',
         'dst'
