@@ -155,7 +155,7 @@ $app->get('/content/{messageId}', function ($req, $response, $args) use ($bot) {
 
 $app->get('/pushmessage', function ($req, $response) use ($bot) {
     // send push message to user
-    $userId = 'Isi dengan user ID Anda';
+    $userId = 'U2bdebd92288b04e7b4edbcdf5936cf50';
     $textMessageBuilder = new TextMessageBuilder('Halo, ini pesan push');
     $result = $bot->pushMessage($userId, $textMessageBuilder);
 
